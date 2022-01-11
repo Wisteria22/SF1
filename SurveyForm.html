@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="SF.css">
+</head>
+<body>
+  <center><h1 id="title">Survey Form</h1>
+  <p>Thank you for taking the time to help us improve the platform</p></center>
+  
+  
+    <form id="survey-form">
+        <label for="name" id="name-label">Name:</label> 
+      <input id="name" type="text" name="name" placeholder="Enter your Name"><br>
+        <label for="email" id="email-label">Email:</label>
+      <input id="email" type="text" name="email" placeholder="your email"> <br>
+        <label for="number" id="number-label">Age:</label>
+      <input id="number" type="number" min="16" max="40" name="number" placeholder="age"> <br>
+
+      <select id="dropdown"><br>
+        <option value="Select" disabled selected>Select</option>
+        <option value="intern">Intern</option>
+        <option value="student">Student</option>
+        <option value="Professional">Professional</option>
+      </select><br>
+
+      <label>Languages and Frameworks known
+         <small>(Check all that apply)</small></label><br>
+         <fieldset>
+       <label for="C">C</label> 
+      <input type="checkbox" name="C" value="C">
+
+      <label for="CSS">CSS</label>
+      <input type="checkbox" name="CSS" value="css">
+
+      <label for="Python">Python</label>
+      <input type="checkbox" name="Python" value="python">
+
+      <label for="Django">Django</label>
+      <input type="checkbox" name="Django" value="django">
+
+      <label for="C++">C++</label>
+      <input type="checkbox" name="C++" value="c++">
+
+      <label for="JS">JS</label>
+      <input type="checkbox" name="JS" value="js">
+
+      <label for="Java">Java</label>
+      <input type="checkbox" name="Java">
+
+      <label for="React">React</label>
+      <input type="checkbox" name="React">
+      <label for="C#">C#</label>
+      <input type="checkbox" name="C#"><br>
+      </fieldset>
+      <label>Gender</label><br>
+      <fieldset>
+      <label for="male">Male</label>
+      <input type="radio" name="male">
+      
+      <label for="female">Female</label>
+      <input type="radio" name="female">
+      </fieldset>
+      <label for="texture">Any comments or suggestions?</label><br>
+      <textarea name="texture" cols="30" rows="10">Enter your comment here...</textarea><br>
+
+      <input type="submit" id="submit">
+    </form>
+</body>
+</html>
